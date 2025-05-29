@@ -19,13 +19,13 @@ const App = () => {
       </Button>
 
       {/* for TouchableOpacity (it's like button but batter ) */}
-      <TouchableOpacity style={{ padding: 10, backgroundColor: 'blue', }} onPress={() => alert('Button Pressed!')}>
-        <Text style={{ color: 'white' }}>Press Me</Text>
+      <TouchableOpacity style={styles.btn} onPress={() => alert('Button Pressed!')}>
+          <Text style={styles.textBtn}>Press me </Text>
       </TouchableOpacity>
 
       {/* for Pressable (it's like button, touchable but much batter ) */}
-      <Pressable style={{ padding: 10, backgroundColor: 'green', marginTop: 20 }} onPress={() => alert('Pressable Pressed!')} on>
-        <Text>Press me </Text>
+      <Pressable style={styles.btn} onPress={() => alert('Pressable Pressed!')} on>
+        <Text style={styles.textBtn}>Press me </Text>
       </Pressable>
 
 
@@ -38,17 +38,38 @@ export default App
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
+
     backgroundColor: 'beige',
+    padding: 20,
+    gap: 20,
   },
   text: {
     fontSize: 18,
-    marginBottom: 20
+    marginBottom: 20,
+    fontWeight: 'bold',
+    textAlign: 'center',
   },
   image: {
-    width: 100,
-    height: 100,
-    backgroundColor: 'lightgray',
+    width: 250,
+    height: 250,
+    borderRadius: 10,
+    marginBottom: 20,
+    alignContent: 'center',
+    alignSelf: 'center',
+  },
+  btn: {
+    padding: 10,
+    backgroundColor: 'gray',
+    marginTop: 20,
+    borderRadius: 50,
+    alignItems: 'center',
+    justifyContent: 'center',
+    width: 150,
+    alignSelf: 'center',
+
+  }
+  , textBtn: {
+    color: 'white',
+    fontWeight: 'bold',
   }
 })
