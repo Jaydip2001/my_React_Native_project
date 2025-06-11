@@ -1,16 +1,16 @@
 import { StyleSheet, Text, View , Button} from 'react-native';
 import React from 'react';
 
-const Search = ({navigation}) => {
+const Low_Stock = () => {
   return (
     <View style={styles.container}>
-      <Text>Search</Text>
-      <Button title="Home" onPress={() => navigation.navigate('Home')} />
+      
+     
     </View>
   );
 };
 
-export default Search;
+export default Low_Stock;
 
 const styles = StyleSheet.create({
 
